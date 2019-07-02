@@ -1,0 +1,107 @@
+.title {
+    color: rgb(218, 62, 62);
+    margin-top: 200px;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    animation: move 5s infinite;
+    -webkit-animation: move 5s infinite;
+}
+@keyframes move {
+    0% {bottom: 0px; color: rgb(218, 62, 62)}
+    100% {bottom: 100px; color: sandybrown}
+}
+
+/* sun animation */
+.level-up {
+    background-color: rgb(33, 33, 79);
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    animation: skyColors;
+    -webkit-animation: skyColors;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes skyColors {
+    0% {
+        background-color: black;
+    }
+    10% {
+        background-color: skyblue;
+    }
+    30% {
+        background-color: blue;
+    }
+    70% {
+        background-color: blue;
+    }
+    90% {
+        background-color: skyblue;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+.sun {
+    background: yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation-name: sunmotion;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes sunmotion {
+    0% {
+        transform: translate(-200px, 200px)    ;
+        -webkit-transform: translate(-200px, 200px)    ;
+        -moz-transform: translate(-200px, 200px)    ;
+        -ms-transform: translate(-200px, 200px)    ;
+        -o-transform: translate(-200px, 200px)    ;
+        background-color: orange;
+}
+    25% {
+        transform: translate(800px, -50px)    ;
+        -webkit-transform: translate(800px, -50px)    ;
+        -moz-transform: translate(800px, -50px)    ;
+        -ms-transform: translate(800px, -50px)    ;
+        -o-transform: translate(800px, -50px)    ;
+        background-color: yellow;
+}
+    75%{
+        transform: translate(1000px, 0px)    ;
+        -webkit-transform: translate(1000px, 0px)    ;
+        -moz-transform: translate(1000px, 0px)    ;
+        -ms-transform: translate(1000px, 0px)    ;
+        -o-transform: translate(1000px, 0px)    ;
+        background-color: yellow;
+}
+    100% {
+        transform: translate(2000px, 200px)    ;
+        -webkit-transform: translate(2000px, 200px)    ;
+        -moz-transform: translate(2000px, 200px)    ;
+        -ms-transform: translate(2000px, 200px)    ;
+        -o-transform: translate(2000px, 200px)    ;
+        background-color: red;
+}
+}
+
+
+.grass {
+    background: green;
+    height: 300px;
+    position: relative;
+    top: 100px;
+}
+
